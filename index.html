@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Student Management System</h1>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="studentName">Enter Student Name:</label>
+                <input type="text" id="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="courseSelect">Select Course to Enroll:</label>
+                <select id="courseSelect" required>
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="React">React (7000)</option>
+                    <option value="Node.js">Node.js (6000)</option>
+                    <option value="Java">Java (5000)</option>
+                    <option value="CSS">CSS (3000)</option>
+                    <option value="SQL">SQL (3500)</option>
+                    <option value="C++">C++ (4500)</option>
+                    <option value="Web Development">Web Development (8000)</option>
+                    <option value="Data Science">Data Science (9000)</option>
+                    <option value="Machine Learning">Machine Learning (10000)</option>
+                    <option value="Digital Marketing">Digital Marketing (4000)</option>
+                    <option value="Graphic Design">Graphic Design (5000)</option>
+                    <option value="Cyber Security">Cyber Security (7500)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="paymentMethod">Select Payment Method:</label>
+                <select id="paymentMethod" required>
+                    <option value="" disabled selected>Select a payment method</option>
+                    <option value="Bank Transfer">Bank Transfer</option>
+                    <option value="Easypaisa">Easypaisa</option>
+                    <option value="JazzCash">JazzCash</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="paymentAmount">Transfer Money:</label>
+                <input type="number" id="paymentAmount" required>
+            </div>
+            <button type="submit">Enroll Student</button>
+        </form>
+        <div id="status" class="status"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
